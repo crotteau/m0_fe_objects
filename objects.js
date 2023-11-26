@@ -9,24 +9,32 @@ var foods = {
   apples: 23, 
   grapes: 507, 
   eggs: 48
-}
+};
 
 // Write code that prints all of the 'keys' of the foods variable 
 // you created above:
 // YOUR CODE HERE
 
+console.log(Object.keys(foods));
+
 // Write code that prints all of the 'values' of the foods variable 
 // you created above:
 // YOUR CODE HERE
+
+console.log(Object.values(foods));
 
 // Write code that prints the value of the second food of the foods variable 
 // you created above:
 // YOUR CODE HERE
 
+console.log(foods.grapes)
+
 // Write code that adds a food to the foods object. 
 // Then, print the updated object:
 // YOUR CODE HERE
 
+foods.bread = 1;
+console.log(Object.keys(foods));
 
 // -------------------
 // Part 2: Email
@@ -39,17 +47,31 @@ var foods = {
 // Declare a variable that stores an object. Each key should be an attribute of an email and each
 // value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
+var email = {
+  sender: "Robin",
+  receiver: "Megan",
+  subject: "Trout Photos",
+  timestamp: "3:06pm on 11/3/23",
+  message: "Plz enjoy these photos of Trout"
+
+};
+
 // Write code that logs your email object to the terminal.
 
+var emailMegan = "megan.crotteau@gmail.com"
+console.log(emailMegan);
 
 // Write code that logs all of the 'keys' of the email object 
 // you created above:
 // YOUR CODE HERE
 
+console.log(Object.keys(email));
+
 // Write code that logs all of the 'values' of the email object 
 // you created above:
 // YOUR CODE HERE
 
+console.log(Object.values(email));
 
 // -------------------
 // Part 3: Many Emails - CHALLENGE!
@@ -99,3 +121,29 @@ console.log(posts[0]);
 // YOU DO: Create an array of at least 3 EMAIL Objects, using the same 
 // key-value pairs you used in your email Object above.
 // Then, print the email Array to the Terminal.
+
+email = [
+  {
+  sender: "Robin",
+  receiver: "Megan",
+  subject: "Trout Photos",
+  timestamp: "3:06pm on 11/3/23",
+  message: "Plz enjoy these photos of Trout"
+  },
+  {
+  sender: "Kevin",
+  receiver: "Megan",
+  subject: "DOTA info",
+  timestamp: "4:15pm on 11/3/23",
+  message: "I attached some info for DOTA"
+  },
+  {
+  sender: "State Farm",
+  receiver: "Megan",
+  subject: "Car Insurance",
+  timestamp: "9:10am on 11/2/23",
+  message: "Hi, Megan here is your billing statement"
+  }
+];
+
+console.log(email);
